@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Almendra SC", serif;
+  color: darkgrey;
+}
+
+p {
+  font-family: "Almendra", serif;
+  letter-spacing: 0.1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+/* conainers */
+
+.textHeading {
+  color: #bf5b21;
+  letter-spacing: 0.2rem;
+}
+
+.heading {
+  text-align: center;
+  padding: 0.5% 0;
+  margin: 6px;
+  background-color: black;
+  opacity: 0.8;
+}
+
+.arrow-back {
+  padding: 15px 0 0 6px;
+  color: darkgray;
+  text-decoration: none;
+}
+
+.arrow-back:hover {
+  color: #bf5b21;
+}
+
+/* ------------------------------------------- Index ------------------------------------------------ */
+
+/* ---tilte-section--- */
+
+#title {
+  background-image: url("Images/07FCE584-620E-42CC-865B-66D5B0B32589.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* navbar */
+
+.navbar {
+  opacity: 0.8;
+}
+
+.nav-item {
+  margin-left: 50px;
+}
+
+/* title-heading */
+
+#title {
+  height: 100vh;
+}
+
+.title-heading {
+  position: relative;
+  top: 55px;
+  padding-left: 5%;
+}
+
+.title-heading h1 {
+  font-size: 5rem;
+}
+
+/* ---feature-section--- */
+
+.feature-container {
+  text-align: center;
+  padding: 0 5% 10%;
+}
+
+.feature-box img {
+  width: 200px;
+  border-radius: 2%;
+  margin: 0 0 10px;
+  box-shadow: 1px 1px 10px black;
+}
+
+.feature-container h2 {
+  margin-bottom: 10%;
+  font-size: 2rem;
+  font-style: italic;
+}
+
+.fadein {
+  opacity: 0.9;
+  transition: 0s ease;
+}
+
+.fadein:hover {
+  opacity: 1;
+  transition: 0s ease;
+}
+
+/* indexCarousel-section */
+
+#indexCarousel .carousel-item img {
+  margin: 0 auto;
+  border-radius: 2%;
+  width: 50%;
+}
+
+/* contact-section */
+
+.top-link {
+  text-align: center;
+  line-height: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8rem;
+}
+
+.top-link a {
+  text-decoration: none;
+  color: darkgray;
+}
+
+.top-link a:hover {
+  color: #bf5b21;
+}
+
+#contact {
+  background-color: black;
+  opacity: 0.8;
+}
+
+.contact-container {
+  display: flex;
+  height: 50vh;
+  position: relative;
+}
+
+.contact-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.contact-img {
+  background-image: url("Images/ECDDB478-2ABC-4BA8-A225-B5E46D845AB3_1_105_c.jpeg");
+  width: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  margin: 2%;
+  border-radius: 2%;
+}
+
+footer {
+  text-align: center;
+  padding: 5% 0;
+}
+
+/* mediaQueries */
+
+@media (max-width: 767px) {
+  .navbar {
+    position: relative;
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .title-heading {
+    text-align: center;
+    padding: 0 10% 40%;
+  }
+
+  .feature-box {
+    margin-bottom: 50px;
+  }
+  #features h2 {
+    font-size: 1.2rem;
+  }
+
+  #indexCarousel .carousel-item img {
+    width: 90%;
+  }
+
+  .contact-img {
+    width: 80%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+  }
+
+  .contact-container {
+    height: 75vh;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 3%;
+  }
+
+  .contact-text {
+    padding: 7% 0 0 0;
+  }
+
+  .Infos-Img {
+    width: 250px;
+    height: 250px;
+  }
+
+  #Infos video {
+    width: 300px;
+  }
+}
+
+/* ---------------------------------------- pictures ------------------------------------------ */
+
+#Pictures {
+  margin-bottom: 6px;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 3px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/* -------------------------------------- Infos ------------------------------------------- */
+
+#Infos {
+  margin: 20px 100px;
+}
+
+#Infos p {
+  line-height: 30px;
+  color: black;
+}
+
+#Infos video {
+  display: block;
+  margin: 0 auto;
+}
+
+.important {
+  color: red;
+}
+
+.tableOverflow {
+  overflow-x: auto;
+}
+
+table {
+  border-collapse: separate;
+}
+
+@media (max-width: 767px) {
+  #Infos {
+    margin: 20px;
+  }
+}
+
+/* ------------------------------------------ Book ------------------------------------------------ */
+
+#bookSection {
+  height: 100vh;
+  background-color: black;
+  opacity: 0.8;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+#bookSection a {
+  color: darkgray;
+}
+
+/* ------------------------------------------ Links ----------------------------------------------------- */
+
+#Links {
+  text-align: center;
+}
+
+.link {
+  line-height: 50px;
+
+  color: darkgray;
+  font-size: 1.3rem;
+}
+
+.link:hover {
+  color: #bf5b21;
+}
